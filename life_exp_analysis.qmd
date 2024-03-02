@@ -29,4 +29,14 @@ sumdat <- gapminder_unfiltered |>
   filter(lifeExp == max(lifeExp)) |>
   ungroup()
 
+sumdat |>
+  ggplot(aes(x = year, y = lifeExp)) +
+  geom_point(aes(color = country))
+
 ```
+
+This is a lovely plot of life expectancies.
+
+This team workflow is nice.
+
+More comments here.
